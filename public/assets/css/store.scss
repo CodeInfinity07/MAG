@@ -1,0 +1,323 @@
+.manage-store-containner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .select-store {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gainsboro;
+        border-radius: 16px;
+        padding: 2em;
+        width: 100%;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+
+            h5 {
+                margin: 0;
+            }
+
+            span {
+                margin-left: 1em;
+                background-color: #ff4e5f;
+                padding: 0.2em 1.3em;
+                border-radius: 29px;
+                font-size: 1.2em;
+                color: white;
+            }
+        }
+
+        &__controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .select-store__search-containner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                padding: 1em 0.5em;
+                width: 20em;
+
+                input {
+                    width: 80%;
+                    border: 0;
+                    outline: none;
+                    margin-left: 0.4em;
+                }
+
+                .fal {
+                    color: black;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        //this class is shared between stores-containner and agreements
+        .select-store__store {
+            height: 112px;
+            width: 111px;
+            margin: 1em;
+            cursor: pointer;
+
+            .store-index {
+                display: none;
+            }
+
+            .img-containner {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #e9e7f74b;
+
+                img {
+                    width: 85%;
+                }
+            }
+
+            .store-name {
+                height: 30%;
+                background-color: white;
+                text-align: center;
+                line-height: 2;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-weight: 500;
+            }
+
+            &--selected {
+                position: relative;
+
+                .store-index {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 5em;
+                    padding: 1em 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #3858f9;
+                    border-radius: 100%;
+                    color: white;
+                }
+
+                .img-containner,
+                .store-name {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        &__stores-containner {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1em;
+        }
+
+        &__agreement {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid gainsboro;
+            font-weight: 500;
+            padding-top: 1em;
+
+            .select-store__store {
+                margin-right: 1em;
+            }
+
+            .select-store__agreemnts {
+                p {
+                    margin: 1em;
+                }
+
+                p:nth-of-type(1) {
+                    color: #6f42c1;
+                }
+            }
+        }
+    }
+
+    .pricing-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em 0;
+
+        &__box {
+            width: 25em;
+            background-color: white;
+            padding: 1.5em;
+            border-radius: 10px;
+            margin: 1em 4em 1em 0;
+
+            p {
+                font-weight: 500;
+            }
+
+            .checkboxes-containner {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            justify-content: center;
+
+            &__box {
+                margin: 1em 2em;
+            }
+        }
+    }
+
+    .last-section {
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        width: 100%;
+
+        select {
+            width: 20%;
+            border-radius: 10px;
+            color: black;
+            font-size: 1em;
+        }
+
+        &__territories {
+            margin-bottom: 1.5em;
+        }
+
+        &__territories,
+        &__stories {
+            p {
+                font-weight: 500;
+                padding-bottom: 0.5em;
+            }
+
+            .last-section__territories-field,
+            .last-section__stories-field {
+                display: flex;
+                justify-content: space-between;
+
+                .field-containner {
+                    border-radius: 10px;
+                    background-color: #f8f7ff;
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+                    height: auto;
+                    padding: 0.3em 1em;
+                    overflow: auto;
+
+                    .elements-containner {
+                        display: flex;
+
+                        .element {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 0.5em;
+                            border-radius: 5px;
+                            background-color: white;
+                            padding: 0.4em;
+                            min-width: 5.625em;
+                            width: auto;
+
+                            span {
+                                margin-right: 1em;
+                            }
+
+                            .delete {
+                                height: 1em;
+                                width: 1em;
+                                background-color: #f8f7ff;
+                                border-radius: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0;
+                                cursor: pointer;
+
+                                img {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+
+                    input {
+                        border: 0;
+                        background-color: transparent;
+                        outline: none;
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    background-color: transparent;
+                    color: black;
+                    border: 1px solid gainsboro;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    padding: 0.8em 0;
+                    width: 13.0625em;
+                    margin-left: 0.5em;
+                    outline: none;
+                    transition: all 0.3s;
+
+                    &:disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                    }
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin: 2em 0 0 0;
+
+            span {
+                color: #ff4e5f;
+            }
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 460px) {
+        .select-store__stores-containner {
+            justify-content: center;
+        }
+
+        .last-section {
+            select {
+                width: 50%;
+            }
+
+            .last-section__territories-field,
+            .last-section__stories-field {
+                flex-direction: column;
+
+                button {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}

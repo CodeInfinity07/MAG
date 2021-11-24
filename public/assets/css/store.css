@@ -1,0 +1,426 @@
+.manage-store-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.manage-store-containner .select-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid gainsboro;
+  border-radius: 16px;
+  padding: 2em;
+  width: 100%;
+}
+
+.manage-store-containner .select-store__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.manage-store-containner .select-store__title h5 {
+  margin: 0;
+}
+
+.manage-store-containner .select-store__title span {
+  margin-left: 1em;
+  background-color: #ff4e5f;
+  padding: 0.2em 1.3em;
+  border-radius: 29px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.manage-store-containner .select-store__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage-store-containner .select-store__controls .select-store__search-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em 0.5em;
+  width: 20em;
+}
+
+.manage-store-containner .select-store__controls .select-store__search-containner input {
+  width: 80%;
+  border: 0;
+  outline: none;
+  margin-left: 0.4em;
+}
+
+.manage-store-containner .select-store__controls .select-store__search-containner .fal {
+  color: black;
+  font-size: 1.3em;
+}
+
+.manage-store-containner .select-store .select-store__store {
+  height: 112px;
+  width: 111px;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.manage-store-containner .select-store .select-store__store .store-index {
+  display: none;
+}
+
+.manage-store-containner .select-store .select-store__store .img-containner {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9e7f74b;
+}
+
+.manage-store-containner .select-store .select-store__store .img-containner img {
+  width: 85%;
+}
+
+.manage-store-containner .select-store .select-store__store .store-name {
+  height: 30%;
+  background-color: white;
+  text-align: center;
+  line-height: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 500;
+}
+
+.manage-store-containner .select-store .select-store__store--selected {
+  position: relative;
+}
+
+.manage-store-containner .select-store .select-store__store--selected .store-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2em;
+    height: 2em;
+  padding: 1em 0;
+    font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #3858f9;
+  border-radius: 100%;
+  color: white;
+}
+
+.manage-store-containner .select-store .select-store__store--selected .img-containner,
+.manage-store-containner .select-store .select-store__store--selected .store-name {
+  opacity: 0.4;
+}
+
+.manage-store-containner .select-store__stores-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.manage-store-containner .select-store__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid gainsboro;
+  font-weight: 500;
+  padding-top: 1em;
+}
+
+.manage-store-containner .select-store__agreement .select-store__store {
+  margin-right: 1em;
+}
+
+.manage-store-containner .select-store__agreement .select-store__agreemnts p {
+  margin: 1em;
+}
+
+.manage-store-containner .select-store__agreement .select-store__agreemnts p:nth-of-type(1) {
+  color: #6f42c1;
+}
+
+.manage-store-containner .pricing-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.manage-store-containner .pricing-boxes__box {
+  width: 25em;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin: 1em 4em 1em 0;
+}
+
+.manage-store-containner .pricing-boxes__box p {
+  font-weight: 500;
+}
+
+.manage-store-containner .pricing-boxes__box .checkboxes-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1100px) {
+  .manage-store-containner .pricing-boxes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .manage-store-containner .pricing-boxes__box {
+    margin: 1em 2em;
+  }
+}
+
+.manage-store-containner .last-section {
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.manage-store-containner .last-section select {
+  width: 20%;
+  border-radius: 10px;
+  color: black;
+  font-size: 1em;
+}
+
+.manage-store-containner .last-section__territories {
+  margin-bottom: 1.5em;
+}
+
+.manage-store-containner .last-section__territories p, .manage-store-containner .last-section__stories p {
+  font-weight: 500;
+  padding-bottom: 0.5em;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field,
+.manage-store-containner .last-section__territories .last-section__stories-field, .manage-store-containner .last-section__stories .last-section__territories-field,
+.manage-store-containner .last-section__stories .last-section__stories-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner {
+  border-radius: 10px;
+  background-color: #f8f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: auto;
+  padding: 0.3em 1em;
+  overflow: auto;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner .elements-containner,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner .elements-containner, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner .elements-containner,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner .elements-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner .elements-containner .element,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner .elements-containner .element, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner .elements-containner .element,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner .elements-containner .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.5em;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.4em;
+  min-width: 5.625em;
+  width: auto;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner .elements-containner .element span,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner .elements-containner .element span, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner .elements-containner .element span,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner .elements-containner .element span {
+  margin-right: 1em;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner .elements-containner .element .delete,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner .elements-containner .element .delete, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner .elements-containner .element .delete,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner .elements-containner .element .delete {
+  height: 1em;
+  width: 1em;
+  background-color: #f8f7ff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner .elements-containner .element .delete img,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner .elements-containner .element .delete img, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner .elements-containner .element .delete img,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner .elements-containner .element .delete img {
+  width: 70%;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field .field-containner input,
+.manage-store-containner .last-section__territories .last-section__stories-field .field-containner input, .manage-store-containner .last-section__stories .last-section__territories-field .field-containner input,
+.manage-store-containner .last-section__stories .last-section__stories-field .field-containner input {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field button,
+.manage-store-containner .last-section__territories .last-section__stories-field button, .manage-store-containner .last-section__stories .last-section__territories-field button,
+.manage-store-containner .last-section__stories .last-section__stories-field button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid gainsboro;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.8em 0;
+  width: 13.0625em;
+  margin-left: 0.5em;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field button:disabled,
+.manage-store-containner .last-section__territories .last-section__stories-field button:disabled, .manage-store-containner .last-section__stories .last-section__territories-field button:disabled,
+.manage-store-containner .last-section__stories .last-section__stories-field button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.manage-store-containner .last-section__territories .last-section__territories-field button:hover,
+.manage-store-containner .last-section__territories .last-section__stories-field button:hover, .manage-store-containner .last-section__stories .last-section__territories-field button:hover,
+.manage-store-containner .last-section__stories .last-section__stories-field button:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.manage-store-containner .last-section p {
+  margin: 2em 0 0 0;
+}
+
+.manage-store-containner .last-section p span {
+  color: #ff4e5f;
+}
+
+@media screen and (max-width: 920px) {
+  .manage-store-containner {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .manage-store-containner .select-store__stores-containner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .manage-store-containner .last-section select {
+    width: 50%;
+  }
+  .manage-store-containner .last-section .last-section__territories-field,
+  .manage-store-containner .last-section .last-section__stories-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .manage-store-containner .last-section .last-section__territories-field button,
+  .manage-store-containner .last-section .last-section__stories-field button {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=store.css.map */

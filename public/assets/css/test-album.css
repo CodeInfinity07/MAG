@@ -1,0 +1,582 @@
+.test-album-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-album-containner .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+
+.test-album-containner .steps__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1em;
+}
+
+.test-album-containner .steps__step .fal {
+  color: white;
+}
+
+.test-album-containner .steps__step .status {
+  margin: 0 0.5em;
+}
+
+.test-album-containner .steps__step .status span,.test-album-containner .steps__step .istatus span {
+  display: block;
+    margin: 0 10px;
+}
+
+.test-album-containner .steps__step .status span:last-of-type {
+  color: #219653;
+  font-weight: 500;
+}
+.test-album-containner .steps__step .istatus span:last-of-type {
+    color: #585454;
+    font-weight: 500;
+}
+
+.test-album-containner .album-details {
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.test-album-containner .album-details__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(56, 88, 249, 0.1);
+  padding: 0.7em 1.8em;
+}
+
+.test-album-containner .album-details__title h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.test-album-containner .album-details__title .album-details__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-album-containner .album-details__title .album-details__edit span {
+  color: blue;
+  font-weight: 500;
+  margin-left: 0.8em;
+}
+
+.test-album-containner .album-details__title .album-details__edit .fas {
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.test-album-containner .album-details__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 2em 0;
+}
+
+.test-album-containner .album-details__details .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5em 0 2em;
+}
+
+.test-album-containner .album-details__details .left-part .img-containner {
+  width: 14.875em;
+  margin-right: 1.7em;
+}
+
+.test-album-containner .album-details__details .left-part .img-containner img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.test-album-containner .album-details__details .left-part .boxes-containner p {
+  background-color: #fafafa;
+  padding: 0.7em 1em;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 0.875em;
+  margin: 0.7em 0;
+}
+
+.test-album-containner .album-details__details .right-part {
+  border-left: 1px solid gainsboro;
+  padding-left: 2em;
+}
+
+.test-album-containner .album-details__details .right-part p {
+  margin: 0.4em 0;
+}
+
+.test-album-containner .album-details__details .right-part p:nth-of-type(2), .test-album-containner .album-details__details .right-part p:nth-of-type(4) {
+  font-weight: 500;
+}
+
+.test-album-containner .album-details__details .right-part p:nth-of-type(3) {
+  margin: 1em 0;
+}
+
+.test-album-containner .release-details {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.test-album-containner .release-details__title {
+  background-color: rgba(56, 88, 249, 0.1);
+  padding: 1em 1.8em;
+}
+
+.test-album-containner .release-details__title h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.test-album-containner .release-details__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+.test-album-containner .release-details__steps .release-details__step {
+  background-color: #6f42c1;
+  color: white;
+  width: 18em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  margin: 0 0.5em;
+}
+
+.test-album-containner .release-details__steps .release-details__step span {
+  margin-right: 0.5em;
+}
+
+.test-album-containner .release-details__steps .release-details__step .fas {
+  color: white;
+  cursor: pointer;
+}
+
+.test-album-containner .release-details p {
+  color: #ff4e5f;
+  text-align: center;
+}
+
+.test-album-containner .terms {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 2em;
+}
+
+.test-album-containner .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+
+.test-album-containner .pricing .pricing__free,
+.test-album-containner .pricing .pricing__premium {
+  width: 45%;
+  padding: 2em 3em;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.test-album-containner .pricing .pricing__free .btns-containner,
+.test-album-containner .pricing .pricing__premium .btns-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3em;
+}
+
+.test-album-containner .pricing .pricing__free .btns-containner button,
+.test-album-containner .pricing .pricing__premium .btns-containner button {
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  padding: 0.7em 0;
+  width: 12em;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 500;
+  margin: 0 0.3em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.test-album-containner .pricing .pricing__free {
+  background-color: white;
+}
+
+.test-album-containner .pricing .pricing__free span.red {
+  color: #ff4e5f;
+}
+
+.test-album-containner .pricing .pricing__free p:nth-of-type(2) {
+  color: #ff4e5f;
+  font-size: 0.9em;
+}
+
+.test-album-containner .pricing .pricing__free button:nth-of-type(1) {
+  background-color: transparent;
+}
+
+.test-album-containner .pricing .pricing__free button:nth-of-type(1):hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.test-album-containner .pricing .pricing__free button:nth-of-type(2) {
+  background-color: #3858f9;
+  color: white;
+}
+
+.test-album-containner .pricing .pricing__free button:nth-of-type(2):hover {
+  color: #3858f9;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.test-album-containner .pricing .pricing__premium {
+  background-color: #3858f9;
+  color: white;
+}
+
+.test-album-containner .pricing .pricing__premium a {
+  color: white;
+  text-decoration: underline;
+}
+
+.test-album-containner .pricing .pricing__premium p:nth-of-type(2) {
+  font-size: 2em;
+}
+
+.test-album-containner .pricing .pricing__premium p:nth-of-type(2) span {
+  font-size: initial;
+}
+
+.test-album-containner .pricing .pricing__premium .btns-containner {
+  margin-top: 1em;
+}
+
+.test-album-containner .pricing .pricing__premium .btns-containner button:nth-of-type(1) {
+  background-color: transparent;
+  color: white;
+}
+
+.test-album-containner .pricing .pricing__premium .btns-containner button:nth-of-type(1):hover {
+  color: #3858f9;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.test-album-containner .pricing .pricing__premium .btns-containner button:nth-of-type(2) {
+  background-color: white;
+  color: #3858f9;
+}
+
+.test-album-containner .pricing .pricing__premium .btns-containner button:nth-of-type(2):hover {
+  color: white;
+  background-color: #3858f9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.test-album-containner .selected-store {
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.test-album-containner .selected-store__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(56, 88, 249, 0.1);
+  padding: 0.7em 1.8em;
+}
+
+.test-album-containner .selected-store__title h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.test-album-containner .selected-store__title .selected-store__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-album-containner .selected-store__title .selected-store__edit span {
+  color: blue;
+  font-weight: 500;
+  margin-left: 0.8em;
+}
+
+.test-album-containner .selected-store__title .selected-store__edit .fas {
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.test-album-containner .selected-store__stores-containner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 1.5em;
+}
+
+.test-album-containner .selected-store__stores-containner .selected-store__store {
+  width: 6.25em;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em 0;
+}
+
+.test-album-containner .selected-store__stores-containner .selected-store__store img {
+  width: 80%;
+}
+
+.test-album-containner .track-title {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 2em;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.test-album-containner .track-title table.mobile {
+  display: none;
+}
+
+.test-album-containner .track-title table.desktop {
+  width: 100%;
+}
+
+.test-album-containner .track-title table.mobile td,
+.test-album-containner .track-title table.desktop td {
+  padding: 1em;
+}
+
+.test-album-containner .track-title table.mobile thead tr,
+.test-album-containner .track-title table.desktop thead tr {
+  background-color: rgba(56, 88, 249, 0.1);
+  font-weight: 500;
+}
+
+.test-album-containner .track-title table.mobile tbody tr,
+.test-album-containner .track-title table.desktop tbody tr {
+  border-bottom: 1px solid gainsboro;
+}
+
+.test-album-containner .track-title table.mobile tbody tr span,
+.test-album-containner .track-title table.desktop tbody tr span {
+  font-weight: 500;
+}
+
+.test-album-containner .track-title table.mobile tbody tr td.action,
+.test-album-containner .track-title table.desktop tbody tr td.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70.1px;
+}
+
+.test-album-containner .track-title table.mobile tbody tr td.action div,
+.test-album-containner .track-title table.desktop tbody tr td.action div {
+  margin: 0 0.5em;
+}
+
+.test-album-containner .track-title table.mobile .fas,
+.test-album-containner .track-title table.mobile .far,
+.test-album-containner .track-title table.desktop .fas,
+.test-album-containner .track-title table.desktop .far {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .test-album-containner {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .test-album-containner {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .test-album-containner .album-details__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .test-album-containner .album-details__details .left-part {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+  .test-album-containner .album-details__details .right-part {
+    border: 0;
+    border-top: 1px solid gainsboro;
+    width: 100%;
+    padding-top: 1em;
+  }
+  .test-album-containner .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .test-album-containner .pricing .pricing__free,
+  .test-album-containner .pricing .pricing__premium {
+    width: 90%;
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .test-album-containner .steps__step {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .test-album-containner .steps__step .status {
+    margin-top: 0.5em;
+  }
+  .test-album-containner .steps__step .status span:nth-of-type(2) {
+    display: none;
+  }
+  .test-album-containner .release-details__steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .test-album-containner .release-details__steps .release-details__step {
+    margin: 1em 0;
+    width: 80%;
+  }
+  .test-album-containner .track-title table.desktop {
+    display: none;
+  }
+  .test-album-containner .track-title table.mobile {
+    display: initial;
+  }
+}
+/*# sourceMappingURL=test-album.css.map */

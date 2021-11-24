@@ -1,0 +1,491 @@
+.test-album-containner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .steps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        &__step {
+            display: flex;
+            align-items: center;
+            margin: 0 1em;
+
+            .fal {
+                color: white;
+            }
+
+            .status {
+                margin: 0 0.5em;
+
+                span {
+                    display: block;
+
+                    &:last-of-type {
+                        color: #219653;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .album-details {
+        width: 100%;
+        margin-bottom: 2em;
+        border-radius: 16px;
+        overflow: hidden;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(56, 88, 249, 0.1);
+            padding: 0.7em 1.8em;
+
+            h6 {
+                margin: 0;
+                font-weight: 500;
+            }
+
+            .album-details__edit {
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: blue;
+                    font-weight: 500;
+                    margin-left: 0.8em;
+                }
+
+                .fas {
+                    color: white;
+                    cursor: pointer;
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        &__details {
+            display: flex;
+            background-color: white;
+            padding: 2em 0;
+
+            .left-part {
+                display: flex;
+                align-items: center;
+                margin: 0 5em 0 2em;
+
+                .img-containner {
+                    width: 14.875em;
+                    margin-right: 1.7em;
+
+                    img {
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                }
+
+                .boxes-containner {
+                    p {
+                        background-color: #fafafa;
+                        padding: 0.7em 1em;
+                        font-weight: 500;
+                        border-radius: 10px;
+                        font-size: 0.875em;
+                        margin: 0.7em 0;
+                    }
+                }
+            }
+
+            .right-part {
+                border-left: 1px solid gainsboro;
+                padding-left: 2em;
+
+                p {
+                    margin: 0.4em 0;
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(4) {
+                        font-weight: 500;
+                    }
+
+                    &:nth-of-type(3) {
+                        margin: 1em 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .release-details {
+        background-color: white;
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 2em;
+
+        &__title {
+            background-color: rgba(56, 88, 249, 0.1);
+            padding: 1em 1.8em;
+
+            h6 {
+                margin: 0;
+                font-weight: 500;
+            }
+        }
+
+        &__steps {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+
+            .release-details__step {
+                background-color: #6f42c1;
+                color: white;
+                width: 18em;
+                padding: 0.5em 1em;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 400;
+                margin: 0 0.5em;
+
+                span {
+                    margin-right: 0.5em;
+                }
+
+                .fas {
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        p {
+            color: #ff4e5f;
+            text-align: center;
+        }
+    }
+
+    .terms {
+        text-align: center;
+        width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .pricing {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
+
+        .pricing__free,
+        .pricing__premium {
+            width: 45%;
+            padding: 2em 3em;
+            text-align: center;
+            border-radius: 20px;
+
+            .btns-containner {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3em;
+
+                button {
+                    border: 1px solid rgba(220, 220, 220, 0.5);
+                    padding: 0.7em 0;
+                    width: 12em;
+                    border-radius: 10px;
+                    outline: none;
+                    font-weight: 500;
+                    margin: 0 0.3em;
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        .pricing__free {
+            background-color: white;
+
+            span.red {
+                color: #ff4e5f;
+            }
+
+            p:nth-of-type(2) {
+                color: #ff4e5f;
+                font-size: 0.9em;
+            }
+
+            button {
+                &:nth-of-type(1) {
+                    background-color: transparent;
+
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                        transition: all 0.3s;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    background-color: #3858f9;
+                    color: white;
+
+                    &:hover {
+                        color: #3858f9;
+                        background-color: white;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+
+        .pricing__premium {
+            background-color: #3858f9;
+            color: white;
+
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 2em;
+
+                span {
+                    font-size: initial;
+                }
+            }
+
+            .btns-containner {
+                margin-top: 1em;
+
+                button {
+                    &:nth-of-type(1) {
+                        background-color: transparent;
+                        color: white;
+
+                        &:hover {
+                            color: #3858f9;
+                            background-color: white;
+                            transition: all 0.3s;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        background-color: white;
+                        color: #3858f9;
+
+                        &:hover {
+                            color: white;
+                            background-color: #3858f9;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .selected-store {
+        width: 100%;
+        margin-bottom: 2em;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: white;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(56, 88, 249, 0.1);
+            padding: 0.7em 1.8em;
+
+            h6 {
+                margin: 0;
+                font-weight: 500;
+            }
+
+            .selected-store__edit {
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: blue;
+                    font-weight: 500;
+                    margin-left: 0.8em;
+                }
+
+                .fas {
+                    color: white;
+                    cursor: pointer;
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        &__stores-containner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1em 1.5em;
+
+            .selected-store__store {
+                width: 6.25em;
+                border: 1px solid gainsboro;
+                border-radius: 10px;
+                margin: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5em 0;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .track-title {
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        padding-bottom: 2em;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+        table.mobile {
+            display: none;
+        }
+
+        table.desktop {
+            width: 100%;
+        }
+
+        table.mobile,
+        table.desktop {
+            td {
+                padding: 1em;
+            }
+
+            thead {
+                tr {
+                    background-color: rgba(56, 88, 249, 0.1);
+                    font-weight: 500;
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid gainsboro;
+
+                    span {
+                        font-weight: 500;
+                    }
+
+                    td {
+                        &.action {
+                            display: flex;
+                            align-items: center;
+                            height: 70.1px;
+
+                            div {
+                                margin: 0 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .fas,
+            .far {
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 810px) {
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 950px) {
+        .album-details {
+            &__details {
+                flex-direction: column;
+                align-items: center;
+
+                .left-part {
+                    margin: 0;
+                    padding-bottom: 1em;
+                }
+
+                .right-part {
+                    border: 0;
+                    border-top: 1px solid gainsboro;
+                    width: 100%;
+                    padding-top: 1em;
+                }
+            }
+        }
+
+        .pricing {
+            flex-direction: column;
+            align-items: center;
+
+            .pricing__free,
+            .pricing__premium {
+                width: 90%;
+                margin: 1em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .steps {
+            &__step {
+                flex-direction: column;
+
+                .status {
+                    margin-top: 0.5em;
+
+                    span:nth-of-type(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .release-details {
+            &__steps {
+                flex-direction: column;
+                align-items: center;
+
+                .release-details__step {
+                    margin: 1em 0;
+                    width: 80%;
+                }
+            }
+        }
+
+        .track-title {
+            table.desktop {
+                display: none;
+            }
+
+            table.mobile {
+                display: initial;
+            }
+        }
+    }
+}
